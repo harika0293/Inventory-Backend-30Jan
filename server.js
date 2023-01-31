@@ -133,7 +133,7 @@ app.get("/api/getSeries", (req, res) => {
         return res.send("Failed to Load Data." + error);
       }
       console.log("Series api Success");
-      //console.log("Response", response);
+      console.log("Response", response);
       res.send(response);
     }
   );
@@ -148,7 +148,7 @@ app.get("/api/getWarehouse", (req, res) => {
     function (error, response, body) {
       if (error) return res.send("Failed to Load Data." + error);
       console.log("Warehouse api Success");
-      //console.log("Response", response);
+      console.log("Response", response);
       res.send(response);
     }
   );
